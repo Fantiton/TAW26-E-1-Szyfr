@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TAW26_E_1_Szyfr"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Szyfrowanie. Wykonane przez 0607213741" Height="450" Width="800">
     <Grid Background="#5F9EA0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
