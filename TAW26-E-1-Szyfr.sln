@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAW26-E-1-Szyfr", "TAW26-E-1-Szyfr\TAW26-E-1-Szyfr.csproj", "{F01E39E3-199D-4DA3-BB2F-B125ABADAEDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F01E39E3-199D-4DA3-BB2F-B125ABADAEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01E39E3-199D-4DA3-BB2F-B125ABADAEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01E39E3-199D-4DA3-BB2F-B125ABADAEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01E39E3-199D-4DA3-BB2F-B125ABADAEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {791ECC1C-8876-4BFD-80CC-973ABA5EE204}
+	EndGlobalSection
+EndGlobal
