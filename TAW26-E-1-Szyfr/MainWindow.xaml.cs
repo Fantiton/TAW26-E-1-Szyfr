@@ -1,5 +1,8 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using System.Windows;
+using Microsoft.Win32;
+using System.Threading;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -11,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace TAW26_E_1_Szyfr
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -29,6 +29,9 @@ namespace TAW26_E_1_Szyfr
             if (!int.TryParse(KeyTextBox.Text, out key))
             {
                 key = 0;
+            } else
+            {
+                key = int.Parse(KeyTextBox.Text);
             }
 
             List<char> encryptedText = new List<char>();
@@ -47,9 +50,17 @@ namespace TAW26_E_1_Szyfr
             EncryptedTextTextBlock.Text = new string(encryptedText.ToArray());
         }
 
-        private void SaveCipherButton_Click(Object sender, EventArgs e)
+        private async void SaveCipherButton_Click(Object sender, EventArgs e)
         {
-            
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Plik tekstowy (*.txt)|*.txt";
+            saveFileDialog.FileName = "szyfr.txt";
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                File.WriteAllText(saveFileDialog.FileName, EncryptedTextTextBlock.Text);
+                MessageBox.Show("Plik zapisany pomyślnie!");
+            }
         }
     }
 }
